@@ -39,18 +39,13 @@ form.addEventListener('input', function () {
   
   form.addEventListener('submit', function(event) {
     event.preventDefault();
-    const username = form.querySelector('input[name="Username"]').value;
-    const password = form.querySelector('input[name="Password"]').value;
-    const textLabel = form.querySelector('input[name="textLabel"]').value;
-    const radio = form.querySelector('input[name="radio"]').value;
-    const select = dropdown.value;    
+    const data = new FormData(form)
     const message = {
-        userName : username,
-        Password : password,
-        inputTextLabel : textLabel, 
-        radioSelection : radio,
-        dropdownTitle : select
-
+        userName : data.get("Username"),
+        Password : data.get("Password"),
+        inputTextLabel : data.get("textLabel"), 
+        radioSelection : data.get("radio"),
+        dropdownTitle : dropdown.value
     }
     alert(JSON.stringify(message))
   });
