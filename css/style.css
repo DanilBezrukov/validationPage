@@ -1,0 +1,144 @@
+/* html{
+    height: 100%;
+} */
+main {
+    height: 100%;
+    position: absolute;
+    top: calc(92px + 50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 32px;
+
+}
+
+.title_text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666666;
+}
+
+.input_text {
+    width: 564px;
+    height: 56px;
+    border: 1px solid #CCCCCC;
+    background: #FFFFFF;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.invalid {
+    border: 2px solid #EB5757
+}
+
+.checkbox {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+}
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 49px;
+    height: 24px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #FFFFFF;
+    outline: 1px solid #CCCCCC;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    left: 29px;
+
+    bottom: 3px;
+    background: #F4F4F4;
+    border: 1px solid #CCCCCC;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #7A5CFA;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(-26px);
+    -ms-transform: translateX(-26px);
+    transform: translateX(-26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.dropdown {
+    width: 564px;
+    height: 56px;
+    background: #FFFFFF;
+    border: 2px solid #7A5CFA;
+    border-radius: 8px 8px 0px 0px;
+    cursor: pointer;
+
+}
+
+.formBt {
+    margin-top: 100px;
+    padding-bottom: 92px;
+    width: 564px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resetBt,
+.submitBt {
+    border: 1px solid #7A5CFA;
+    border-radius: 8px;
+    width: 172px;
+    height: 56px;
+    background: #FFFFFF;
+    color: #7A5CFA;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submitBt {
+    background: #7A5CFA;
+    color: #FFFFFF;
+}
+.submitDisabled{
+    background-color: #ccc;
+    border-color: #ccc;
+    cursor:no-drop;
+}

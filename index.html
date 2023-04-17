@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <label class="username">
+                <p class="title_text">Username</p>
+                <input type="text" name="Username" placeholder="Enter username" class="input_text"
+                    pattern="[a-zA-Zа-яА-ЯёЁ\s]{3,}" required>
+            </label>
+
+            <label>
+                <p class="title_text">Password</p>
+                <input type="Password" name="Password" placeholder="Enter password" class="input_text" required pattern=".{4,12}">
+                <p>Your password is between 4 and 12 characters</p>
+            </label>
+
+            <label>
+                <p class="title_text">Input Text Label</p>
+                <input type="text" name="textLabel" placeholder="Type here" class="input_text" attern="[a-zA-Zа-яА-ЯёЁ\s]{3,}" required>
+            </label>
+
+            <label>
+                <input type="checkbox" class="checkbox" required>
+                <span>Remember me</span>
+            </label>
+
+            <label class="switch">
+                <input type="checkbox" value="on" required>
+                <span class="slider round"></span>
+            </label>
+
+            <label>
+                <input type="radio" name="radio" class="radio" value="Radio selection 1"> Radio selection 1
+            </label>
+            <label>
+                <input type="radio" name="radio" class="radio" value="Radio selection 2"> Radio selection 2
+            </label>
+            <label>
+                <input type="radio" name="radio" class="radio" value="Radio selection 3"> Radio selection 3
+            </label>
+
+            <select required class="dropdown" name="dropdown">
+                <option value="">Dropdown option</option>
+                <option value="Dropdown1">Dropdown option 1</option>
+                <option value="Dropdown2">Dropdown option 2</option>
+            </select>
+
+            <div class="formBt">
+                <input type="reset" class="resetBt">
+                <input type="submit" class="submitBt submitDisabled">
+            </div>
+
+        </form>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
